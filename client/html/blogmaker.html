@@ -1,0 +1,20 @@
+<head>
+    <title>
+        BlogMaker
+    </title>
+</head>
+<body>
+  <!-- This will be filled in by the template selected by iron:router -->
+</body>
+
+<!-- Shows a single blog posting, the title, and body -->
+<template name='Post'>
+    <div class='post_title'>{{title}}</div>
+    <div class='post_body'>{{body}}</div>
+</template>
+
+<template name='Posts'>
+    {{#each posts}}
+        {{>Post}}
+    {{/each}}
+</template>
